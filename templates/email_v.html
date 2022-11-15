@@ -1,0 +1,24 @@
+{% include  'index.html' %}
+
+<title>{%block title%} Email Varification{%endblock%}</title>
+
+{% block body%} 
+<div class="form-floating", style="color:green">
+
+  <figure class="text-center">
+    <blockquote class="blockquote">
+
+      <form action="/email_check" method="get">
+        {% csrf_token %}
+        <b><label for="floatingTextarea"> SEARCH EMAILS ADDRESS HERE </label>
+        <br>    
+        <textarea name="test2" id= "test2" style="height:200px; width:650px;" "cursor:auto"> </textarea>
+        <br><br>
+        <button  type="submit" class="btn btn-dark" style="height:40px; width:200px;">GET EMAILS</button>
+    
+        </figure>
+
+       </form>
+
+{%endblock%}
+

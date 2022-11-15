@@ -1,0 +1,50 @@
+{% extends 'index.html' %}
+
+<title>{%block title%}Text Master {%endblock%}</title>
+
+{% block body%} 
+
+<div class="form-floating", style="color:green",>
+
+    <figure class="text-center">
+      <blockquote class="blockquote">
+
+    <b><label for="floatingTextarea">Welcome to Text Master's official website... convert your text free...</label>
+    <br>
+
+    <form action="/result" method="get">
+      {% csrf_token %}
+
+    <textarea name="test1" id= "" style="height:200px; width:650px;" "cursor:auto"></textarea>
+    <br><br>
+    <button  type="submit" class="btn btn-dark" style="height:40px; width:200px;">Submit</button>
+    </figure>
+
+
+
+      <div class="form-check form-switch">
+        <input class="form-check-input" name= "remove_punc" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+        <label class="form-check-label" for="flexSwitchCheckDefault">Remove Punctuation</label>
+      </div>
+      <div class="form-check form-switch">
+        <input class="form-check-input" name= "upper_case" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+        <label class="form-check-label" for="flexSwitchCheckDefault">Upper case</label>
+        
+      </div>
+      <div class="form-check form-switch">
+        <input class="form-check-input" name= "lower_case" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+        <label class="form-check-label" for="flexSwitchCheckDefault">Lower case</label>
+      </div>
+      <div class="form-check form-switch">
+        <input class="form-check-input" name= "remove_numbers" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+        <label class="form-check-label" for="flexSwitchCheckDefault">Remove Numbers</label>
+      </div>
+      <div class="form-check form-switch">
+        <input class="form-check-input" name= "remove_space" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+        <label class="form-check-label" for="flexSwitchCheckDefault">Remove Space</label>
+      
+        
+
+    </form>
+    
+{%endblock%}

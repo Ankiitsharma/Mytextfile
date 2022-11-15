@@ -1,0 +1,30 @@
+.new a{
+
+    background-color: hwb(183 10% 44%);
+    border-color: #3a07f2;
+    border-radius: 50%;
+
+
+    
+
+}
+
+
+/* .container{
+    background-image : url("./Assets/kitty.png");
+ 
+    height: 100vh;
+ // set size & stop image repetition 
+    background-repeat : no-repeat;
+    background-size : contain;
+  } */
+
+  .face{     
+    background-color: hsl(160, 95%, 66%);
+    text-shadow: #027951;
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+
+
+  }

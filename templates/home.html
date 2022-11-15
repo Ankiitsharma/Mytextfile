@@ -1,0 +1,10 @@
+{% include 'index.html' %} 
+
+{%block title%} {%endblock%}
+{%load static %}
+
+{% block body%}
+<img src= "{% static '/images/graph.png' %}"  width="100" height="380" class="d-block w-100" alt="..."></img><br>
+{%endblock%}
+{% include "footer.html" %}
+
